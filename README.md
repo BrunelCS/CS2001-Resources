@@ -1,2 +1,2 @@
 # CS2001-Labs
-All CS2001 lab related will be here. 
+All CS2001 resources that will be used for labs, lectures, and deliverables will be here. 
