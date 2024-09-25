@@ -1,9 +1,9 @@
 # Deliverable 1 - Placement Application
 
-## Summary of the Job Vacancy
+## Summary of the Placement
 Vacancy URL: [Link to the vacancy](https://vacancy-url.com)
 
-### Brief summary
+### Brief job summary
 
 ### Brief list of skills required/desirable
 
