@@ -9,13 +9,15 @@
 
 Instructions: Remove the example, and fill it with your project backlog. (Remove the instructions before submission)
 
-| Epic | US ID | As a .. | I want to .. | So that ... | F/NF/UI | Priority|
-| ------ | ------ | ------------- | ------- | ------- |-------- | ----- |
-| User registration | 001 | Allotment user | Create an account | I can save a profile of my preferences | F (Functional) | High |
-|                   | 002 | Allotment user | Locate the best allotments on a map | I can choose the right ones during registration | UI (User Interface) | Low |
-|                   | 003 | User | Have access to the site 99.99% of the time | I do not get frustrated with user experience | NF (Non-functional) | Low* |
+| Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI | Priority|
+| ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
+| User registration | 001    | Allotment user | Create an account | I can save a profile of my preferences | F (Functional) | High |
+|                   | 002    | Allotment user | Locate the best allotments on a map | I can choose the right ones during registration | UI (User Interface) | Low |
+|                   | 003    | User | Have access to the site 99.99% of the time | I do not get frustrated with user experience | NF (Non-functional) | Low** |
 
-* You may have prioritised this low, as you are not planning production yet.
+*User Story ID
+
+**You may have prioritised this low, as you are not planning production yet.
 
 ## Sprint Plan
 
