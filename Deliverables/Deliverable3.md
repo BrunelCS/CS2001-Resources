@@ -33,7 +33,7 @@ Instructions: Remove the example, and fill it with your project backlog. (Remove
 
 **Instructions:** Fill in your sprint backlog for each user story you have decided to implement in your sprint. Below is an example for implementing User Registration-001. Remove the example, and fill it with your project backlog, adding more sub-headings and tables as necessary. (Remove the instructions before submission.)
 
-####  Epic-User Story ID (Example: User registration - 001)
+1.   Epic-User Story ID (Example: User registration - 001)
  **Acceptance criteria:**
  A new allotment user can save username, password, preferences for food items and preferred allotment locations.
 
@@ -42,6 +42,8 @@ Instructions: Remove the example, and fill it with your project backlog. (Remove
 |001-1 Database| Implement data model and data repository for allotment users| 5 |  Seona |
 |001-2 Backend | Implement API for registering allotment users| 5 | Seona |
 |001-3 Frontend| Create a registration form for allotment users in React | 8 | Clemence|
+
+2. Epic-User Story ID...
 
 
 

@@ -5,7 +5,7 @@
 ### Contributors
 
 
-# Sprint [Number]
+# Sprint [Number] - Review and Retrospective
 
 ### Sprint Review
 
@@ -55,12 +55,33 @@ instruction before submission.)
 |*               | *                           | *           |
 
 
-**Instructions:** Continue the same review and retrospective exercise for other Sprints.
+
+# Sprint [x] Plan
+
+**Instructions:** Add your sprint goal, sprint leads, and fill the spring backlog. (Remove the instructions before submission.)
+
+### Sprint Goal
+
+### Sprint Leads
+
+### Sprint Backlog
+
+**Instructions:** Fill in your sprint backlog for each user story you have decided to implement in your sprint. Below is an example for how User Registration-001 is modified in the new Sprint backlog.  Remove the example, and fill it with user stories from project backlog (that serves the sprint goal), adding more sub-headings and tables as necessary. (Remove the instructions before submission.)
+
+1.  Epic-User Story ID (Example: User registration - 001)
+ **Acceptance criteria:**
+ A new allotment user can save username, password, preferences for food items and preferred allotment locations.
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+| ------------| ----------------| ----------------| ----------------|
+|001-3 Frontend| Create a registration form for allotment users in React | 8 | Clemence|
+
+2. Epic-User Story ID...
 
 
-# Appendix - Revised Backlog
+# Appendix - Project Backlog
 
-**Instructions:** Remove the example, and fill it with your project backlog. In the example, we kept User Registration - 001 as not all of its tasks are complete. The review also added a revision on how the form should collect users' preferred food items. (Remove the instructions before submission)
+*Instructions:** Remove the example, and fill it with your project backlog. In the example, we kept User Registration - 001 as not all of its tasks are complete. The review also added a revision on how the form should collect users' preferred food items. (Remove the instructions before submission)
 
 | Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
