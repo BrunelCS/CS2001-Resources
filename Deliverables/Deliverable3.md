@@ -9,19 +9,21 @@
 
 Instructions: Remove the example, and fill it with your project backlog. (Remove the instructions before submission)
 
-| Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI | Priority|
+| Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
-| User registration | 001    | Allotment user | Create an account | I can save a profile of my preferences | F (Functional) | High |
-|                   | 002    | Allotment user | Locate the best allotments on a map | I can choose the right ones during registration | UI (User Interface) | Low |
-|                   | 003    | User | Have access to the site 99.99% of the time | I do not get frustrated with user experience | NF (Non-functional) | Low** |
+| User registration | 001    | Allotment user | Create an account | I can save a profile of my preferences | F | High |
+|                   | 002    | Allotment user | Locate the best allotments on a map | I can choose the right ones during registration | UI | Low |
+|                   | 003    | User | Have access to the site 99.99% of the time | I do not get frustrated with user experience | NF | Low*** |
 
 *User Story ID
 
-**You may have prioritised this low, as you are not planning production yet.
+**F/NF/UI - Functional/Non-Functional/User Interface
+
+***You may have prioritised this low, as you are not planning production yet.
 
 ## Sprint Plan
 
-Instructions: Add your sprint goal, sprint leads, and fill the spring backlog. (Remove the instructions before submission.)
+**Instructions:** Add your sprint goal, sprint leads, and fill the spring backlog. (Remove the instructions before submission.)
 
 ### Sprint Goal
 
@@ -29,7 +31,7 @@ Instructions: Add your sprint goal, sprint leads, and fill the spring backlog. (
 
 ### Sprint Backlog
 
-Instructions: Fill in your sprint backlog for each user story you have decided to implement in your sprint. Below is an example for implementing User Registration-001. Remove the example, and fill it with your project backlog, adding more sub-headings and tables as necessary. (Remove the instructions before submission.)
+**Instructions:** Fill in your sprint backlog for each user story you have decided to implement in your sprint. Below is an example for implementing User Registration-001. Remove the example, and fill it with your project backlog, adding more sub-headings and tables as necessary. (Remove the instructions before submission.)
 
 ####  Epic-User Story ID (Example: User registration - 001)
  **Acceptance criteria:**
