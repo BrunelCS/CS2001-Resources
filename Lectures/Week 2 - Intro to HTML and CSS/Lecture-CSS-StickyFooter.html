@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello World</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: "Oswald", sans-serif;
+                color: #ebebeb;
+            }
+            html {
+                height: 100%;
+            }
+            body {
+                background-color: #ebebeb;
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+            }
+            main {
+                flex: 1 0 auto;
+                color: #333;
+                padding: 5px;
+            }
+            footer {
+                background-color: violet;
+                color: #fff;
+                padding: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            Here is a bunch of text but not enough to push the footer to the
+            bottom of the page.
+        </main>
+        <footer>
+            I'd like this to be at the bottom and thanks to Flexbox I can be
+            put in my place!
+        </footer>
+    </body>
+</html>
