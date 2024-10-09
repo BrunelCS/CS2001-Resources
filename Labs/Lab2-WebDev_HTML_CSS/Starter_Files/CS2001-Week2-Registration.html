@@ -9,36 +9,39 @@
     <body>
         <header></header>
         <nav>
-            <!-- ToDo: An unordered list to represent the menu, 
-                       each list item should correspond to the menu items (Home, Register, Login, Help)
-                       The css class of the menu is "navlist"
-                       Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <div class="topnav">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                  </div>
             </ul>
          </nav>
         <main>
-            <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search..">
             </aside>
             <section>
                 <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
-                           Name - type text
-                           email- type text
-                           password - type text
-                           Terms of Service - type checkbox
-                           Register - button
-                           Learn more - link
-                           Check lecture slides and the links on the slides to learn about forms
-                           and how to create a button that would react to a click Event
-                        -->
-                    <!-- Example given for user type checkboxes-->
-                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <label for="repassword">Re-tyle password:</label>
+                    <input type="password" id="repassword" name="repassword"><br><br>
+
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
 
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms">I agree to the <a href="/terms-of-use">Terms of Use</a> and  <a href="/privacy-policy">Privacy Policy</a>.</label><br><br>
+
+                    <input type="submit" value="Register"> <a href="/learn-more">Learn more</a>
                     <br><br>
                 </form>
                 <div class="center" id="hiddenSection">

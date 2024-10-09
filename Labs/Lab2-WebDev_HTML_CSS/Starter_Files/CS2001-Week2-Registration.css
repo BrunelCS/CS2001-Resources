@@ -51,6 +51,7 @@ ul.navlist li a:hover {
 main {
     border-bottom: 0.5rem solid;
     box-sizing: border-box;
+    display: flex;
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
     See lecture slides*/
@@ -65,12 +66,16 @@ section, aside {
 aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
+   min-width: 25%;
+   max-width: 25%;
     background-color: #deded8;
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+   min-width: 75%;
+   max-width: 75%;
 }
 
 /*Styling for search in aside*/
@@ -99,15 +104,36 @@ section {
 @media screen and (max-width: 700px) {
     /* ToDo: Style aside and section so that they take 100% width on small screens*/
     aside {
-    
+        max-width: 100%;
+        min-width: 100%;
     }
     
     section {
- 
+        max-width: 100%;
+        min-width: 100%;
     }
 
     #hiddenSection{
         overflow-wrap: break-word;
     }
 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
