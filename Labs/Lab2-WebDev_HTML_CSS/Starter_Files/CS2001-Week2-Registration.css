@@ -1,6 +1,6 @@
 body{
     font-family: "Lato", sans-serif;
-    max-width: 75rem;
+    max-width: 75rem; 
     margin: auto;
     height: 100vh;
 }
@@ -54,6 +54,11 @@ main {
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
     See lecture slides*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 60vh;
+    height: auto;
 }
 
 section, aside {
@@ -66,11 +71,17 @@ aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
     background-color: #deded8;
+    min-width: 25%;
+    max-width: 25%;
+    width: 25%;
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+    min-width: 75%;
+    max-width: 75%;
+    width: 75%;
 }
 
 /*Styling for search in aside*/
@@ -86,6 +97,8 @@ section {
     */
     border: 3px solid green;
     padding: 10px;
+    margin: 0 auto;
+    width: 80%;
   }
 
 /* Styling for text inputs in the form*/
@@ -99,11 +112,15 @@ section {
 @media screen and (max-width: 700px) {
     /* ToDo: Style aside and section so that they take 100% width on small screens*/
     aside {
-    
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
     }
     
     section {
- 
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
     }
 
     #hiddenSection{

@@ -14,14 +14,35 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Register</a></li>
+                <li><a href="/">Login</a></li>
+                <li><a href="/">Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input id="searchBar" class="search" name="searchBar" placeholder="Search">
             </aside>
             <section>
                 <form class="center" novalidate>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+
+                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                    <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
+                    <input type="checkbox" id="seller" name="seller" value="seller">
+                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms">I agree to the <a href="/">Terms of Use</a> adn <a href="/">Privacy Policy</a>.</label><br><br>
+
+                    <input type="button" value="Register" onclick="{alert('Success!')}">
+                    <a href="/">Learn more</a>
                 <!-- ToDo: Implement the form containing 
                            Name - type text
                            email- type text
@@ -33,13 +54,6 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
-                    <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
-                    <input type="checkbox" id="seller" name="seller" value="seller">
-                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
-
-                    <br><br>
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
