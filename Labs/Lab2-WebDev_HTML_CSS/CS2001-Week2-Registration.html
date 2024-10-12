@@ -14,11 +14,16 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a href=#home>Home</a></li>
+                <li><a href=#register>Register</a></li>
+                <li><a href=#login>Login</a></li>
+                <li><a href=#help>Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search">
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -33,13 +38,25 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><p></p>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><p></p>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password"><p></p>
+                    <label for="passwordConf">Re-type password:</label><br>
+                    <input type="text" id="passwordConf" name="passwordConf"><br><br><br>
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <input type="checkbox" id="terms" value="terms">
+                    <label for="terms">I agree to the <a href="#terms-of-use">Terms of Use</a> and <a href="#privacy-policy">Privacy Policy</a>.</label>
 
                     <br><br>
+                    <input type="submit" value="Register">
+                    <a href="learn more">Learn more</a>
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
