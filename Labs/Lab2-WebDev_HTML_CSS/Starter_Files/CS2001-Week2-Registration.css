@@ -25,7 +25,7 @@ ul.navlist{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #040404;
 }
 
 ul.navlist li
@@ -49,23 +49,29 @@ ul.navlist li a:hover {
 /**** Styling for main part */
 
 main {
-    border-bottom: 0.5rem solid;
-    box-sizing: border-box;
-    /*ToDo: Make this a flexible container; 
-    You can find the following helpful: display, flex-wrap, width, min-height, height
-    See lecture slides*/
-}
+    display: flex; /* Aligns children to the right */
+    height: 100%;
+ 
+ }
+ 
 
-section, aside {
-    padding: 0.5rem;
-    box-sizing: border-box;
-    min-height: 100%;
+section {
+    section {
+        background-color: #f0f0f0; /* Light background for the form */
+        width: 75%;                /* Width of the section */
+        padding: 1rem;            /* Padding for the section */
+        box-sizing: border-box;   /* Include padding in width calculation */
+    }
 }
 
 aside {
-    /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
-   values, like 25% of the page.*/ 
-    background-color: #deded8;
+    background-color: #deded8; /* Light gray background */
+    width: 25%;                /* Set width of the aside */
+    min-width: 200px;         /* Minimum width */
+    max-width: 300px;         /* Maximum width */
+    padding: 1rem;            /* Padding for the aside */
+    box-sizing: border-box;   /* Include padding in width calculation */
+
 }
 
 section {
@@ -81,18 +87,35 @@ section {
 }
 
 .center {
-    /*ToDo: Styling for centered elements
-    You can use margin, width useful to center.
-    */
-    border: 3px solid green;
-    padding: 10px;
-  }
+    display: flex;                     /* Make it a flex container */
+    flex-direction: column;           /* Stack children vertically */
+    border: 3px solid green; /* Updated border color */
+    padding: 1.5rem;                     /* Increased padding for better spacing */
+    width: 90%;                          /* Adjusted width for more presence */
+    margin: 1rem auto;                  /* Center the element and add top/bottom margin */
+    margin-left: 50%;                   /* Added left margin to move it more to the right */
+   
+}
 
 /* Styling for text inputs in the form*/
 .textInput {
     display: block;
     width: auto;
     text-align: left;
+}
+
+.search {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 10px;
 }
 
 /*Styling with a media query - lecture slide 36*/
