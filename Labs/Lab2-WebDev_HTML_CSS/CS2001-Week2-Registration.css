@@ -57,7 +57,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
         
 }
 
@@ -71,13 +72,15 @@ aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
     background-color: #deded8;
-    min-width: 25%;
+    width: 25%;
+    min-width: 180px;
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
-   width:430px;
+   width:75%;
+   min-width: 350px;
 }
 
 /*Styling for search in aside*/
@@ -93,11 +96,8 @@ section {
     */
     border: 3px solid green;
     padding: 10px;
-    margin-left:50%;
-    margin-right:33%;
-    margin-top:0;
-    margin-bottom:0;
-    width: 100%;
+    width: 50%;
+    margin: auto;
   }
 
 /* Styling for text inputs in the form*/
