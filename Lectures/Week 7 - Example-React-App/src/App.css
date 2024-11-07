@@ -1,0 +1,36 @@
+nav {
+    border-bottom: 1px solid black;
+}
+
+ul.navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.navlist li
+{
+    float: left;
+    display: inline;
+}
+
+ul.navlist li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navlist li a:hover {
+    background-color: #111;
+}
+
+.maincontent {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
