@@ -1,0 +1,134 @@
+body{
+    font-family: "Lato", sans-serif;
+    max-width: 75rem;
+    margin: auto;
+    height: 100vh;
+}
+
+header{
+    background-image:url("src/assets/SharingFood.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    height:200px;
+    margin: auto;
+}
+
+/**** Menu Style *****************************************/
+nav {
+    border-bottom: 1px solid black;
+}
+
+ul.navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.navlist li
+{
+    float: left;
+    display: inline;
+}
+
+ul.navlist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navlist li a:hover {
+    background-color: #111;
+}
+
+/**** Styling for container*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: 100vw;
+}
+
+.maincontent, .sidebar {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.maincontent {
+    padding: 10px;
+    min-width: 350px;
+    width: 75%;
+}
+
+.sidebar {
+    width: 25%;
+    min-width: 180px;
+    background-color: #deded8;
+}
+
+
+.registration{ 
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    min-width: 350px;
+    width: 75%;
+  }
+
+  .labelText {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }
+
+  .inputText{
+    height: 25px;
+   }
+   
+
+/*Styling for search in aside*/
+.search{
+    display: block;
+    width: auto;
+    margin: 10px;
+    text-align: left;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+/* Styling for text inputs in the form*/
+.textInput {
+    display: block;
+    width: auto;
+    text-align: left;
+}
+
+/*Styling with a media query*/
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        min-width: 100%;
+    }
+
+    #hiddenSection{
+        overflow-wrap: break-word;
+    }
+}
