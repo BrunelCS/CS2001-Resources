@@ -1,5 +1,6 @@
 import './App.css'
 import Registration from './components/Registration'
+import ControlledForm from './components/ControlledForm'
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
             <input type="text" className="search" id="search" name="search" placeholder="Search"></input>
           </aside>
           <main className="maincontent">
-              <Registration></Registration>
+              <ControlledForm />
           </main>
       </div>
     </>
