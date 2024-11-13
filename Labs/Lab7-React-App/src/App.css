@@ -31,9 +31,6 @@ ul.navlist li
 {
     float: left;
     display: inline;
-}
-
-ul.navlist li a {
     display: block;
     color: white;
     text-align: center;
@@ -41,8 +38,13 @@ ul.navlist li a {
     text-decoration: none;
 }
 
-ul.navlist li a:hover {
+ul.navlist li:hover {
     background-color: #111;
+    cursor: pointer;
+}
+
+ul.navlist li a{
+    color: white;
 }
 
 /**** Styling for container*/
@@ -54,7 +56,7 @@ ul.navlist li a:hover {
     box-sizing: border-box;
     border-bottom: 0.5rem solid;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 70vh;
     height: auto;
     width: 100vw;
 }
@@ -68,6 +70,8 @@ ul.navlist li a:hover {
     padding: 10px;
     min-width: 350px;
     width: 75%;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar {
@@ -81,8 +85,7 @@ ul.navlist li a:hover {
     width: 50%;
     border: 3px solid green;
     padding: 10px;
-    min-width: 350px;
-    width: 75%;
+    min-width: 400px;
   }
 
   .labelText {
@@ -102,6 +105,7 @@ ul.navlist li a:hover {
     width: auto;
     margin: 10px;
     text-align: left;
+    margin-left: 10%;
 }
 
 .center {
@@ -116,6 +120,31 @@ ul.navlist li a:hover {
     display: block;
     width: auto;
     text-align: left;
+}
+
+/* Styling weather widget*/
+.weather-widget{
+    border: 3px solid black;
+    color: black;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.weather-loading{
+    border: 3px solid black;
+    color: black;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.weather-error{
+    border: 3px solid black;
+    color: black;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /*Styling with a media query*/

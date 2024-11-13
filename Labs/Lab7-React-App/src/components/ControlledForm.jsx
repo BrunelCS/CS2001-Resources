@@ -47,7 +47,7 @@ function ControlledForm(){
             <label>I want to sell produce from my allotment.</label><br/><br/>
 
             <input type="checkbox" name="tos" value={formData.tos} onClick={handleChange}/>
-            <label>I agree to the Terms of Use and Privacy Policy.</label><br/>
+            <label>I agree to the Terms of Use and Privacy Policy.</label><br/><br/>
 
 
             <button onClick={console.log(formData)}>Submit</button>
