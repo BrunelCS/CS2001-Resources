@@ -1,4 +1,4 @@
-import ControlledForm from './ControlledForm.jsx'
+import ControlledForm from '../components/ControlledForm.jsx'
 
 export default function Register(){
 

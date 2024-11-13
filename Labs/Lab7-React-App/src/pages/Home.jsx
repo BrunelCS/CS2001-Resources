@@ -2,6 +2,6 @@
 export default function Home(){
 
     return(
-        <h1>This is HOME</h1>
+        <p>This is HOME</p>
     )
 }
