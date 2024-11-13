@@ -22,6 +22,11 @@ function ControlledForm(){
 
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('Form Data:', formData);
+    }
+
     return(
         <form className="registration">
             <label className="labelText">Name:
@@ -50,7 +55,7 @@ function ControlledForm(){
             <label>I agree to the Terms of Use and Privacy Policy.</label><br/><br/>
 
 
-            <button onClick={console.log(formData)}>Submit</button>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     )
 }

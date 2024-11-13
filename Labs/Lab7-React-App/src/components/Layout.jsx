@@ -5,7 +5,7 @@ import Weather from "./Weather";
 function Layout(){
     return(
         <>
-            <Menu />
+            <Menu /> {/* Could also use code in Menu straight here but using this for cleaner visuals */}
             <div className="container">
                 <aside className="sidebar">
                     <input type="text" className="search" id="search" name="search" placeholder="Search"></input>
