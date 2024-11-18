@@ -6,7 +6,7 @@ export default function ProductDetail(){
     
     return(
         <div>
-            This is product detail for {productName} with {productId}. 
+            This is product detail for {productId}. 
         </div>
     )
 }
