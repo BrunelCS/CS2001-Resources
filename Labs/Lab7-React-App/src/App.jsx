@@ -1,21 +1,24 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Registration from './components/Registration'
+import Home from './components/Home'
+import Help from './components/Help'
+import Login from './components/Login'
+import Layout from './components/Layout'
+
 
 function App() {
-  
-
   return (
-    <>
-      <header></header>
-      <div className="container">
-          <aside className="sidebar">
-            <input type="text" className="search" id="search" name="search" placeholder="Search"></input>
-          </aside>
-          <main className="maincontent">
-              <Registration></Registration>
-          </main>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout/>}>
+          <Route index element={<Home/>}></Route>
+          <Route path={'/register'} element={<Registration/>}></Route>
+          <Route path={'/login'} element={<Login/>}></Route>
+          <Route path={'/help'} element={<Help/>}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
