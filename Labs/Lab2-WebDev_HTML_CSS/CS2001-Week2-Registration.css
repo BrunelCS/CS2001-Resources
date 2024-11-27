@@ -109,12 +109,12 @@ section {
 /*Styling with a media query - lecture slide 36*/
 @media screen and (max-width: 700px) {
     /* ToDo: Style aside and section so that they take 100% width on small screens*/
-    aside {
-        min-width: 100%;
+    main{
+        flex-direction: column;
     }
     
-    section {
-        
+    aside {
+        min-width: 100%;
     }
 
     #hiddenSection{
