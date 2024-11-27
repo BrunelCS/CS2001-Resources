@@ -14,11 +14,16 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a  href="/Home" >Home</a></li>
+                <li><a  href="/Register">Register</a></li>
+                <li><a  href="/Login">Login</a></li>
+                <li><a  href="/Help">Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search" name="search"><br>
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -33,13 +38,28 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
+
+                    <label class="textInput" for="name">Name:</label>
+                    <input type="text" id="Name" name="name"><br><br>
+                    <label class="textInput" for="email">Email:</label>
+                    <input type="text" id="Email" name="email"><br><br>
+                    <label class="textInput" for="password">Password:</label>
+                    <input type="text" id="Password" name="password"><br><br>
+                    <label class="textInput" for="name">Re-type Password:</label>
+                    <input type="text" id="Re-type Password" name="re-type password"><br><br>
+
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                    <label for="buyer">I agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</label><br><br>
 
-                    <br><br>
+                    <input type="submit" id="button" value="Register">
+                    <a href="/Learn More">Learn More</a>
+
+                    <br>
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script>
+        let counter=0;
+        function hello(){
+            counter++;
+            document.querySelector('h1').innerHTML = 'You said Hello ' +counter+ ' times.';
+        }
+    </script>
+</head>
+<body>
+    <h1>You haven't said Hello!</h1>
+    <button onclick="hello()">Say Hello</button>
+</body>
+</html>
