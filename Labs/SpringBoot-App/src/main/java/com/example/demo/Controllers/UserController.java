@@ -18,6 +18,9 @@ import com.example.demo.DTO.UserPostDTO;
 import com.example.demo.Models.User;
 import com.example.demo.Models.UserType;
 
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 @RestController
 
 public class UserController {
@@ -41,8 +44,9 @@ public class UserController {
             return new ResponseEntity<>(Optional.ofNullable(null), HttpStatus.BAD_REQUEST);
         }
     	
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
     	User newUser = new User(newUserDTO.getName(), newUserDTO.getEmail(),
-    			newUserDTO.getPassword(), newUserDTO.getUserType());
+        encoder.encode(newUserDTO.getPassword()), newUserDTO.getUserType());
     	userService.addUser(newUser);
     	return new ResponseEntity<>(Optional.ofNullable(newUser),HttpStatus.CREATED);
 
@@ -67,6 +71,12 @@ public class UserController {
     public Optional<User> getUserByEmail(@RequestParam String email) {
     	return Optional.ofNullable(userService.findByEmail(email));
     }
+
+    //Get the details for the currently logged in user
+	@GetMapping("/user/getDetails")
+	public Optional<User> geLoggedInUserDetails() {
+		return Optional.ofNullable(userService.findByEmail(SecurityContextHolder.getContext().getAuthentication().getName()));
+	}
 
    
 }

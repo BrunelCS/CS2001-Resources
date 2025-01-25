@@ -8,6 +8,7 @@ import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 @Component
@@ -36,17 +37,18 @@ public class DatabaseInit implements CommandLineRunner{
 		orderItemsRepository.deleteAll();
 		orderRepository.deleteAll();
 		
+		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
-		User Bob = new User("Bob","bob@sample.com", "bob_pass", UserType.BUYER);
+		User Bob = new User("Bob","bob@sample.com", encoder.encode("bob_pass"), UserType.BUYER);
 		userRepository.save(Bob);
 		
-		User Alice = new User("Alice", "alice@sample.com", "alice_pass", UserType.SELLER);
+		User Alice = new User("Alice", "alice@sample.com", encoder.encode("alice_pass"), UserType.SELLER);
 		userRepository.save(Alice);
 		
-		User Carol = new User("Carol", "carol@sample.com", "carol_pass", UserType.BOTH);
+		User Carol = new User("Carol", "carol@sample.com", encoder.encode("carol_pass"), UserType.BOTH);
 		userRepository.save(Carol);		
 
-		User Altti = new User("Altti", "altti@sample.com", "altti_pass", UserType.BUYER);
+		User Altti = new User("Altti", "altti@sample.com", encoder.encode("altti_pass"), UserType.BUYER);
 		userRepository.save(Altti);
 
 		//print all users

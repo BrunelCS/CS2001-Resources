@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
-function useFetchData(url) {
+function useFetchData(url,token) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -9,7 +9,11 @@ function useFetchData(url) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(url);
+        const response = await axios({
+              method: 'get',
+              url: url,
+              headers: {"Authorization" : `Bearer ${token}`}
+        })
         setData(response.data);
       } catch (error) {
         setError(error);
