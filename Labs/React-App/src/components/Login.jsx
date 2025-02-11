@@ -1,13 +1,13 @@
 import React, {useRef} from "react";
 
-import { useOutletContext } from "react-router-dom";
+import { useAuth} from "../customHooks/AuthContext"
 
 import axios from "axios";
 
-export default function Login(props){
+export default function Login(){
     const email=useRef();
     const password=useRef();
-    const [token, setToken] = useOutletContext();
+    const {token, setToken} = useAuth();
 
     const validateForm = () => {
         let formValid = false;

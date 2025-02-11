@@ -1,8 +1,8 @@
 import useFetchData from "../customHooks/useFetchData";
-import { useOutletContext } from "react-router-dom";
+import { useAuth } from "../customHooks/AuthContext";
 
 export default function Home(){
-    const [token, setToken] = useOutletContext();
+    const {token, setToken} = useAuth();
     const {data, error, loading } = token?useFetchData('http://localhost:8080/user/getDetails',token):{}
     
     if(!token) return <div>You are a guest user</div>

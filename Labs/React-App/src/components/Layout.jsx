@@ -4,7 +4,6 @@ import Menu from './Menu'
 import Sidebar from './Sidebar'
 
 export default function Layout(){
-  const [token, setToken] = useState(null);
   return(
     <>
     <header></header>
@@ -12,7 +11,7 @@ export default function Layout(){
     <div className="container">
         <Sidebar/>
         <main className="maincontent">
-            <Outlet context={[token,setToken]}/>
+            <Outlet/>
         </main>
     </div>
     </>
