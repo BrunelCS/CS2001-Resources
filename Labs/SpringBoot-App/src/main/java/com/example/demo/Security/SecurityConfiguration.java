@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -17,29 +16,22 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 //@EnableWebSecurity
 public class SecurityConfiguration {
 	@Autowired
 	 private UserDetailsServiceImpl userDetailsService;
-	
-	@Autowired
-	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-	    auth.userDetailsService(userDetailsService)
-	    .passwordEncoder(new BCryptPasswordEncoder());
-	}
-	
-	
-	@Bean
-  public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
-      return authenticationConfiguration.getAuthenticationManager();
-  }
+
+	  @Bean
+	  public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+		AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
+		authenticationManagerBuilder.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
+		return authenticationManagerBuilder.build();
+	  }
 
 	@Bean
-	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+	public SecurityFilterChain securityFilterChain(HttpSecurity http, AuthenticationManager authenticationManager) throws Exception {
 
 		http
 			.csrf(csrf -> csrf.disable());
@@ -54,7 +46,7 @@ public class SecurityConfiguration {
 		        );
 		
 		http
-		.addFilterBefore(new LoginFilter("/login", authenticationManager(http.getSharedObject(AuthenticationConfiguration.class))),
+		.addFilterBefore(new LoginFilter("/login", authenticationManager),
 				UsernamePasswordAuthenticationFilter.class)
 		.addFilterBefore(new JWTAuthenticationFilter(), 
 				UsernamePasswordAuthenticationFilter.class);
