@@ -15,7 +15,7 @@ Sprint Goal: Implement Backend and consider integration
 
 | Demoed Feature | Feedback   |
 |----------------|------------|
-| Improved UI for Login, registration and emergency contact form | Looks better, forcus on integration and development of another feature          |
+| Improved UI for Login, registration and emergency contact form | Looks better, focus on integration and development of another feature          |
 
 #### **Completed Tasks**
 
@@ -45,6 +45,30 @@ Sprint Goal: Implement Backend and consider integration
 | **Task ID** | **Description** | **Assigned To** | **Done?**| 
 | ------------| ----------------| ----------------| -----------|
 |003-1 | Better the UI for emergency contact information| Friya | Yes |
+
+####  Epic-User Story ID Downloading user data  - 004
+ **Acceptance criteria:** 
+user can download their data in a json/PDF file
+
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|004-1 | implement database where users can download that information| Isaac | Yes |
+
+####  Epic-User Story ID Deleting user data - 005
+ **Acceptance criteria:**
+ user can download thier data in a json/PDF file
+
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|005-1 | implement database where users can delete that information| Isaac | Yes |
+
+####  Epic-User Story ID Deleting user data - 006
+ **Acceptance criteria:**
+ user can remove thier data in a json file/PDF file
+
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|005-2 | log the use/instance of deletion| Isaac | Yes |
 
 
 ### New/Revised Tasks
@@ -76,6 +100,17 @@ Sprint Goal: Implement Backend and consider integration
 | 003-2 UI | The emergency contact form should reflect blue colours and be clear.|
 | 003-3 UI | The emergency contact form should be in the same layout at the registration form.|
 | 003-4 UI | the form should be moe spaced out and not look crammed together|
+
+####  Deleting user Data - 004
+
+| **Task ID** | **Description** |
+|-------------|-----------------|
+| 004-1 UI | The download button will prompt a "no data avaliable  if there is no data in the pdf file, preventing download.|
+| 004-2 UI | When an action is logged such as Download data it will produce a random string|
+| 004-2 UI | When an action is logged such as Delete data it will produce a random string|
+| 004-4 UI |JSon file is produced when requesting to access data logs can be obtained in pdf file|
+
+
 
 
 
@@ -115,6 +150,16 @@ scrum master
 |004-2 | a map is presented to the user | 10 | Friya|
 |004-3 | based on the post code inputed the map shows nearest well being centers  | 10 | Friya|
 
+1.  Epic-User Story ID User Data Management  - 005
+ **Acceptance criteria:**
+ a user can download their data in a pdf format and delete it from the system
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+| ------------| ----------------| ----------------| ----------------|
+|005-1 | Ensure the database is merged with the main system(database) to store real user data | 10 | Isaac|
+
+
+
 
 # Appendix - Project Backlog
 
@@ -124,7 +169,10 @@ scrum master
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
 | Nearest well being centers | 004    |  user | view the nearest well being centers near me | I can improve my well being | F | High |
 | Nearest well being centers | 004    |  user | view the nearest well being centers on a map and as a list | i can locate the centers easier  | F | High |
-
+| Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
+| ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
+| User Data Management| 05   |  Developer | integrate user data with the main database | real user data can be stored in a main system  | F | High |
+| UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
 
 
 *User Story ID
