@@ -200,11 +200,9 @@ Users can see reviews from others and submit their own feedback.
 | Nearest well being centers | 004    |  user | view the nearest well being centers near me | I can improve my well being | F | High |
 | Nearest well being centers | 004    |  user | view the nearest well being centers on a map and as a list | i can locate the centers easier  | F | High |
 | Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
-| ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
 | User Data Management| 05   |  Developer | integrate user data with the main database | real user data can be stored in a main system  | F | High |
 | UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
 | Epic                         | US ID* | As a ..    | I want to ..                                      | So that ...                                       | F/NF/UI** | Priority |
-|------------------------------|--------|------------|--------------------------------------------------|--------------------------------------------------|-----------|----------|
 | Reviews Page Implementation  | 010    | user       | view and submit reviews about the service       | I can share my feedback and see others' experiences | F         | High     |
 | Reviews Page Implementation  | 010    | developer  | integrate the reviews page with the main system | users can see and interact with feedback seamlessly | F         | High     |
 
