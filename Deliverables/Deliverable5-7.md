@@ -127,6 +127,19 @@ No unpredictable behaviour across different web browsers
 |   016-1 | Convert conversations json into a blob to store in database | Viktor | No |
 | 016-2 | Send summary of conversation to user e-mail after confirmation that the session has ended (interaction timer) | Viktor | No
 
+#### Epic-User Story ID Questionnaire - 001 
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   001-1 | Setup Questionnaire in Front-end | Tarif | Yes |
+| 001-2 | Fetch Question from Backend | Tarif | Yes |
+| 001-3 | Add CSS-Styling in front-end  | Tarif | Yes |
+
+
+#### Epic-User Story ID Storing Questionnaire Responses - 002
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   002-1 | Implement Backend | Tarif | Yes |
+
 
 ### New/Revised Tasks
 
@@ -197,6 +210,11 @@ No unpredictable behaviour across different web browsers
 | 007-1 UI | Recently viewed resources database fully functional.|
 | 007-2 UI | Add more resources for the other emotions.|
 
+####  Epic-User Story ID Storing Questionnaire Responses - 002
+
+| **Task ID** | **Description** |
+|-------------|-----------------|
+| 002-1  | Fix Auto-population Error |
 
 
 
@@ -279,6 +297,15 @@ User can see both recently viewed resources page and view resources page
 |011-1 | Pull previous conversations from DB and have a dedicated section to review them | 10 | Viktor|
 |011-2 | Take latest conversation and produce a summary after no interaction for (x) amount of time, then send summary to user by e-mail | 10 | Viktor|
 
+### Epic-User Story ID Questionnaire - 001
+ **Acceptance criteria:**
+ Users can view their mood-pattern that is represented by a Pie-chart
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+| ------------| ----------------| ----------------| ----------------|
+|001-1 | Create a Pi Chart | 8 | Tarif |
+|001-2 | Add Styling to Pi Chart | 8 | Tarif |
+
 
 # Appendix - Project Backlog
 
@@ -296,3 +323,4 @@ User can see both recently viewed resources page and view resources page
 | Reviews Page Implementation  | 010    | developer  | integrate the reviews page with the main system | users can see and interact with feedback seamlessly | F         | High     |
 | Recently viewed resources database fully functional.|013| Developer| Ensure i can see the last resources i clicked and it saves when the user logs in and out|F|High
 | Add more resources for the other emotions.|013| Developer|Make sure theres enough resources for each page|F|High
+| Analyze Mood Patterns |001| User| analyze my mood pattern to predict if im at risk or not |F|High
