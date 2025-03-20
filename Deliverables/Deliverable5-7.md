@@ -86,9 +86,20 @@ Student users receive emails in thei inbox
 |   001    |Fix email SMTP properties to receive an email| Acelya | Yes|
 |  002|   Integate the email subscription form with initial survey | Acelya | No |
 
-### New/Revised Tasks
+#### Epic-User Story ID Survey Implementation - 009
+**Acceptance criteria:**
+User responses are stored in the database, and the survey logic is fully functional with backend integration.
 
-**Instructions:** Add any new tasks coming from the review that wasn't previously in the backlog. Below is an example. Remove the example and add yours.
+| **Task ID** | **Description** | **Assigned To** | **Done?** |
+|------------|----------------|----------------|-----------|
+| 006-1 | Merge the survey-related code into the main branch incrementally | Abdurashid | Yes |
+| 006-2 | Design and implement database schema for storing survey responses | Abdurashid | Yes |
+| 006-3 | Develop backend API endpoints for managing survey responses | Abdurashid | Yes |
+| 006-4 | Implement frontend-backend integration for survey submission | Abdurashid | Yes |
+| 006-5 | Test survey functionality end-to-end and fix bugs | Abdurashid | Yes |
+
+
+### New/Revised Tasks
 
 ####  Epic-User Story ID User registration - 001
 
@@ -140,6 +151,17 @@ Student users receive emails in thei inbox
 |001-2 UI| Users can pick when they want to receive emails - daily,weekly and every two weeks| 
 |001-3| The emails are stored in the H2 database and will be picked and sent randomly depending on the frequency| 
 
+#### Epic-User Story ID Survey Implementation - 009
+
+| **Task ID** | **Description** |
+|------------|-----------------|
+| 005-1 | Feedback section and reviews page implemented, displaying stored feedback. |
+| 005-2 | Feedback submission saves data to the database and retrieves it for display in the reviews page. |
+| 005-3 | Database implemented and set up, now storing feedback in the table. |
+| 005-4 | Tested and fixed bugs in frontend-backend connection. |
+| 005-5 | Feedback section is now fully functional. |
+
+
 
 
 
@@ -156,18 +178,15 @@ Student users receive emails in thei inbox
 
 # Sprint 4 Plan
 
-**Instructions:** Add your sprint goal, sprint leads, and fill the spring backlog. (Remove the instructions before submission.)
-
 ### Sprint Goal 
 complete back end and focus on integration
 
 ### Sprint Leads
-product owner
-scrum master
+
+#### product owner - Tarif Aziz
+#### scrum master - Abdurashid Fattokhov
 
 ### Sprint Backlog
-
-**Instructions:** Fill in your sprint backlog for each user story you have decided to implement in your sprint. Below is an example for how User Registration-001 is modified in the new Sprint backlog.  Remove the example, and fill it with user stories from project backlog (that serves the sprint goal), adding more sub-headings and tables as necessary. (Remove the instructions before submission.)
 
 1.  Epic-User Story ID Nearest well being centers  - 004
  **Acceptance criteria:**
@@ -196,25 +215,31 @@ scrum master
 | ------------| ----------------| ----------------| ----------------|
 |006-1 | users can input a post code which gets saved to a table in my database | 10 | Acelya|
 
+1.  Epic-User Story ID Reviews Page Implementation - 010  
+**Acceptance criteria:**  
+Users can see reviews from others and submit their own feedback.  
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+|------------|----------------|----------------|----------------|
+| 009-1 | Ensure that the feedback database is merged with the main database | 8 | Abdurashid |
+| 009-2 | Fully merge frontend and backend for the feedback system into the main branch | 10 | Abdurashid |
+| 009-3 | Implement a Reviews Page where users can view feedback from others | 8 | Abdurashid |
+| 009-4 | Merge and integrate the Reviews Page with the main system | 10 | Abdurashid |
+
+
 # Appendix - Project Backlog
 
-*Instructions:** Remove the example, and fill it with your project backlog. In the example, we kept User Registration - 001 as not all of its tasks are complete. The review also added a revision on how the form should collect users' preferred food items. (Remove the instructions before submission)
 
 | Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
 | Nearest well being centers | 004    |  user | view the nearest well being centers near me | I can improve my well being | F | High |
 | Nearest well being centers | 004    |  user | view the nearest well being centers on a map and as a list | i can locate the centers easier  | F | High |
-| Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
-| ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
 | User Data Management| 05   |  Developer | integrate user data with the main database | real user data can be stored in a main system  | F | High |
 | UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
 |Entry Journal | 001| User | entry journal with/without prompt where I can edit or delete| I can express myself | F| High
 |Track Goals| 002| User | track my everyday goals where I can delete or edit them|I can improve myself to complete my task| F|High 
+| UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
+| Reviews Page Implementation  | 010    | user       | view and submit reviews about the service       | I can share my feedback and see others' experiences | F         | High     |
+| Reviews Page Implementation  | 010    | developer  | integrate the reviews page with the main system | users can see and interact with feedback seamlessly | F         | High     |
 
 
-
-*User Story ID
-
-**F/NF/UI - Functional/Non-Functional/User Interface
-
-***You may have prioritised this low, as you are not planning production yet.
