@@ -323,4 +323,4 @@ User can see both recently viewed resources page and view resources page
 | Reviews Page Implementation  | 010    | developer  | integrate the reviews page with the main system | users can see and interact with feedback seamlessly | F         | High     |
 | Recently viewed resources database fully functional.|013| Developer| Ensure i can see the last resources i clicked and it saves when the user logs in and out|F|High
 | Add more resources for the other emotions.|013| Developer|Make sure theres enough resources for each page|F|High
-| Analyze Mood Patterns |001| User| analyze my mood pattern to predict if im at risk or not |F|High
+| Analyze Mood Patterns |001| User| analyze my mood pattern  |it predicts my mood|F| High
