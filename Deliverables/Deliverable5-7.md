@@ -193,7 +193,7 @@ Users can see reviews from others and submit their own feedback.
 
 # Appendix - Project Backlog
 
-*Instructions:** Remove the example, and fill it with your project backlog. In the example, we kept User Registration - 001 as not all of its tasks are complete. The review also added a revision on how the form should collect users' preferred food items. (Remove the instructions before submission)
+
 
 | Epic              | US ID* | As a .. | I want to .. | So that ... | F/NF/UI** | Priority|
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
