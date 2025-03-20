@@ -187,13 +187,14 @@ scrum master
 | ------------| ----------------| ----------------| ----------------|
 |005-1 | Ensure the database is merged with the main system(database) to store real user data | 10 | Isaac|
 
-1.  Epic-User Story ID Email integration - 006
+
+1.  Epic-User Story ID Email integration  - 004
  **Acceptance criteria:**
-Survey and email subscription integration
+ Survey and email subscription integration 
+
 | **Task ID** | **Description** | **Story Point** | **Assigned To** |
 | ------------| ----------------| ----------------| ----------------|
-|006-1 | integrate the email subscription frontend and backend with the initial survey for the application flow | 10 | Acelya|
-
+|006-1 | users can input a post code which gets saved to a table in my database | 10 | Acelya|
 
 # Appendix - Project Backlog
 
