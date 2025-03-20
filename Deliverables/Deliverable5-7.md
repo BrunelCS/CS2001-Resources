@@ -78,7 +78,13 @@ User can entry journal and can track goals
 |   003-6    |Develop initial API endpoints| Jamima | No|
 |  003-7|   Integate database with backend | Jamima | No |
 
-
+#### Epic-User Story ID Email backend -012
+**Acceptance Criertia:**
+Student users receive emails in thei inbox
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   001    |Fix email SMTP properties to receive an email| Acelya | Yes|
+|  002|   Integate the email subscription form with initial survey | Acelya | No |
 
 ### New/Revised Tasks
 
@@ -127,6 +133,12 @@ User can entry journal and can track goals
 |004-2| Finish integrate database with backend | 
 |004-3| Integrate these two features with the navigaion bar
 
+#### Epic- User Story ID Email Backend 012
+| **Task ID** | **Description** |
+|-------------|-----------------|
+|001-1 |Students can now receive different types of mental health tip emails |
+|001-2 UI| Users can pick when they want to receive emails - daily,weekly and every two weeks| 
+|001-3| The emails are stored in the H2 database and will be picked and sent randomly depending on the frequency| 
 
 
 
@@ -175,7 +187,12 @@ scrum master
 | ------------| ----------------| ----------------| ----------------|
 |005-1 | Ensure the database is merged with the main system(database) to store real user data | 10 | Isaac|
 
-
+1.  Epic-User Story ID Email integration - 006
+ **Acceptance criteria:**
+Survey and email subscription integration
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+| ------------| ----------------| ----------------| ----------------|
+|006-1 | integrate the email subscription frontend and backend with the initial survey for the application flow | 10 | Acelya|
 
 
 # Appendix - Project Backlog
