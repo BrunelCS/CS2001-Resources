@@ -98,6 +98,13 @@ User responses are stored in the database, and the survey logic is fully functio
 | 006-4 | Implement frontend-backend integration for survey submission | Abdurashid | Yes |
 | 006-5 | Test survey functionality end-to-end and fix bugs | Abdurashid | Yes |
 
+#### Tailored resources page backend -013
+**Acceptance Criertia:**
+Student users receive emails in thei inbox
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   007-1   |Create a matching system for resources | Amaar | Yes|
+|   007-2    |Implement a backend that stores and retrieves resources allowing the user to view past resources | Amaar | Yes |
 
 ### New/Revised Tasks
 
@@ -161,6 +168,12 @@ User responses are stored in the database, and the survey logic is fully functio
 | 005-4 | Tested and fixed bugs in frontend-backend connection. |
 | 005-5 | Feedback section is now fully functional. |
 
+#### Epic-User Story ID Tailored resources backend - 013
+
+| **Task ID** | **Description** |
+|-------------|-----------------|
+| 007-1 UI | Recently viewed resources database fully functional.|
+| 007-2 UI | Add more resources for the other emotions.|
 
 
 
@@ -226,6 +239,14 @@ Users can see reviews from others and submit their own feedback.
 | 009-3 | Implement a Reviews Page where users can view feedback from others | 8 | Abdurashid |
 | 009-4 | Merge and integrate the Reviews Page with the main system | 10 | Abdurashid |
 
+#### Epic-User Story ID Tailored resources backend - 013
+**Acceptance criteria:** 
+User can see both recently viewed resources page and view resources page
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+|-------------|-----------------|
+| 007-1 UI | Recently viewed resources database fully functional.| 8| Amaar
+| 007-2 UI | Add more resources for the other emotions.| 8| Amaar
 
 # Appendix - Project Backlog
 
@@ -241,5 +262,5 @@ Users can see reviews from others and submit their own feedback.
 | UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
 | Reviews Page Implementation  | 010    | user       | view and submit reviews about the service       | I can share my feedback and see others' experiences | F         | High     |
 | Reviews Page Implementation  | 010    | developer  | integrate the reviews page with the main system | users can see and interact with feedback seamlessly | F         | High     |
-
-
+| Recently viewed resources database fully functional.|013| Developer| Ensure i can see the last resources i clicked and it saves when the user logs in and out|F|High
+| Add more resources for the other emotions.|013| Developer|Make sure theres enough resources for each page|F|High
