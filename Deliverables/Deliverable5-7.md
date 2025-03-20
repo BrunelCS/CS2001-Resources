@@ -106,6 +106,28 @@ Student users receive emails in thei inbox
 |   007-1   |Create a matching system for resources | Amaar | Yes|
 |   007-2    |Implement a backend that stores and retrieves resources allowing the user to view past resources | Amaar | Yes |
 
+#### Integration with other's code - 014
+**Acceptance Criertia:**
+Component integrates into common codebase
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   014   |Refactor own code to be an independent component and easily embed into common codebase | Viktor | Yes|
+
+#### UI Improvements - 015
+**Acceptance Criertia:**
+No unpredictable behaviour across different web browsers
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   015-1  | Stylesheets with defined browser agnostic behaviour | Viktor | Yes|
+| 015-2 | Implement button to allow toggle of dark/bright theme | Viktor | Yes
+
+#### Backend storage of conversations and e-mail summary - 017
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   016-1 | Convert conversations json into a blob to store in database | Viktor | No |
+| 016-2 | Send summary of conversation to user e-mail after confirmation that the session has ended (interaction timer) | Viktor | No
+
+
 ### New/Revised Tasks
 
 ####  Epic-User Story ID User registration - 001
@@ -247,6 +269,16 @@ User can see both recently viewed resources page and view resources page
 |-------------|-----------------|
 | 007-1 UI | Recently viewed resources database fully functional.| 8| Amaar
 | 007-2 UI | Add more resources for the other emotions.| 8| Amaar
+
+### Epic-User Story ID Email integration  - 011
+ **Acceptance criteria:**
+ Users can review past conversations and receive a summary by e-mail 
+
+| **Task ID** | **Description** | **Story Point** | **Assigned To** |
+| ------------| ----------------| ----------------| ----------------|
+|011-1 | Pull previous conversations from DB and have a dedicated section to review them | 10 | Viktor|
+|011-2 | Take latest conversation and produce a summary after no interaction for (x) amount of time, then send summary to user by e-mail | 10 | Viktor|
+
 
 # Appendix - Project Backlog
 
