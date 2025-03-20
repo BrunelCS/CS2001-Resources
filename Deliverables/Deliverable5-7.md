@@ -70,6 +70,15 @@ user can download their data in a json/PDF file
 | ------------| ----------------| ----------------| -----------|
 |005-2 | log the use/instance of deletion| Isaac | Yes |
 
+#### Epic-User Story ID User -003
+**Acceptance Criertia:**
+User can entry journal and can track goals
+| **Task ID** | **Description** | **Assigned To** | **Done?**| 
+| ------------| ----------------| ----------------| -----------|
+|   003-6    |Develop initial API endpoints| Jamima | No|
+|  003-7|   Integate database with backend | Jamima | No |
+
+
 
 ### New/Revised Tasks
 
@@ -109,6 +118,14 @@ user can download their data in a json/PDF file
 | 004-2 UI | When an action is logged such as Download data it will produce a random string|
 | 004-2 UI | When an action is logged such as Delete data it will produce a random string|
 | 004-4 UI |JSon file is produced when requesting to access data logs can be obtained in pdf file|
+
+
+#### Epic- User Story ID User can track goals and entry journal - 004
+| **Task ID** | **Description** |
+|-------------|-----------------|
+|004-1 | Fix and finish the API endpoints|
+|004-2| Finish integrate database with backend | 
+|004-3| Integrate these two features with the navigaion bar
 
 
 
@@ -173,6 +190,9 @@ scrum master
 | ----------------- | ------ | ------------- | ------- | ------- |-------- | ----- |
 | User Data Management| 05   |  Developer | integrate user data with the main database | real user data can be stored in a main system  | F | High |
 | UI consistency | 006    |  developer|follow the user exisiting frontend styles throught the whole program| the UI looks consistent across the application | UI | Medium |
+|Entry Journal | 001| User | entry journal with/without prompt where I can edit or delete| I can express myself | F| High
+|Track Goals| 002| User | track my everyday goals where I can delete or edit them|I can improve myself to complete my task| F|High 
+
 
 
 *User Story ID
