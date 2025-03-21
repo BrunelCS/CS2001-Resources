@@ -266,7 +266,7 @@ complete back end and focus on integration
 
 | **Task ID** | **Description** | **Story Point** | **Assigned To** |
 | ------------| ----------------| ----------------| ----------------|
-|006-1 | users can input a post code which gets saved to a table in my database | 10 | Acelya|
+|006-1 | Integrate the email subscription with the initial survey to support application flow | 10 | Acelya|
 
 1.  Epic-User Story ID Reviews Page Implementation - 010  
 **Acceptance criteria:**  
